@@ -5,37 +5,30 @@
 }
 
 body {
-    
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #262932 ;
+    background-color: #262932;
     color: #fff;
 }
 
-.background {
-    position: absolute;
-    max-height: 50vh;
-    max-width: 100vh;
-    z-index: -333;
-    
-    
-}
-
-
-
+ 
 .header {
-    
     display: flex;
-    width: 100%;
+    width: 91%;
+    height: 60vh;
     padding-top: 3rem;
     padding-bottom: 4rem;
     justify-content: flex-end;
-    
+    background-image: url("./assets/img/background1.png");
+    margin-bottom: 3rem;
 }
 
-.mobile-menu-toggle {
-    display: none;
+.header,
+img {
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navbar {
@@ -43,21 +36,15 @@ body {
     background: hsla(0, 0%, 0%, 0.2);
     backdrop-filter: blur(20px);
     padding-right: 1.5em;
-    
-    
-   
 }
 
-
 .menu-list {
-    
     display: flex;
     list-style: none;
     justify-content: flex-end;
     gap: 1.2rem;
     padding: 0;
     margin: 0;
-    
 }
 
 .navbar a {
@@ -70,22 +57,14 @@ body {
     margin-inline-end: 0.5em;
 }
 
-
-
-
-
-
-
-
-
-
+.mobile-menu-toggle {
+    display: none;
+}
 
 /*  max 360 mobile  inc tablet  right order with mediaquerys */
 
-
 /* TABLET */
 @media (max-width: 768px) {
-
 }
 
 /* MOBILE */
@@ -119,10 +98,5 @@ body {
         border: none;
         right: 3rem;
         color: #fff;
-    }
-
-    /* fade fontawesome icon */
-    .mobile-menu-toggle .fas {
-        transition: opacity 0.7s ease-out;
     }
 }
