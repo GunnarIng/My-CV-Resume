@@ -96,12 +96,14 @@ position: relative;
   font-weight: 400;
   color: rgb(0, 0, 0);
   padding: 0rem 4rem 0 4rem;
+  height: 100vh;
 }
 
-.page-first {
+.page-first, .page-second {
   display: flex;
   gap: 2rem;
   align-items: center;
+  padding-bottom: 3rem;
 }
 .side-img {
   width: 30%;
