@@ -4,5 +4,9 @@ In this project I shall introduce myself and show my earlier projects in a portf
 
 
 
+toDo>
+fix mobile query
+seperate files
+
 
 

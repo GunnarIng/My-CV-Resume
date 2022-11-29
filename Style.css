@@ -7,16 +7,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white-color: #ffffff;
+  --blue-color:#0E4BEF;
+  --header-height:5rem;
+  --footer-height:4rem;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-color: #ffffff;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .header {
-  display: flex;
   height: 70vh;
   padding-top: 3rem;
   padding-bottom: 4rem;
@@ -34,13 +40,13 @@ img {
 
 .navbar {
   position: fixed;
+  z-index: 1;
   background: hsla(0, 0%, 0%, 0.2);
   backdrop-filter: blur(20px);
   padding-right: 1.5em;
 }
 
 .menu-list {
-  display: flex;
   list-style: none;
   justify-content: flex-end;
   gap: 1.2rem;
@@ -50,8 +56,8 @@ img {
 
 .navbar a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.6rem;
+  color: var(--white-color);
+  font-size:  1.6rem;
   
 }
 
@@ -64,10 +70,14 @@ img {
   display: none;
 }
 
+article {
+ width: 40%;
+
+}
+
 .front-name {
-  display: flex;
   flex-direction: column;
-  padding: 3rem 0 0 3rem;
+  padding: 3rem 0 0 1rem;
   width: 100%;
   font-family: "Ropa Sans", sans-serif;
   font-size: 2.5rem;
@@ -75,13 +85,13 @@ img {
 
 .front-name a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
   font-size: 1.5rem;
   width: 10rem;
 }
 
 .profile-pic{
-position: relative;
+  position: relative;
   width: 160px;
   height: 160px;
   object-fit: cover;
@@ -96,7 +106,7 @@ position: relative;
   
 }
 .fa-brands {
-  color: #fff;
+  color: var(--white-color);  
   font-size: 4rem;
   margin-right: 1rem;
   
@@ -104,15 +114,14 @@ position: relative;
 
 .page-main {
   font-family: "Roboto";
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 1rem;
   color: rgb(0, 0, 0);
   padding: 0rem 4rem 0 4rem;
   height: 100vh;
+  justify-items: center;
 }
 
 .page-first, .page-second {
-  display: flex;
   gap: 2rem;
   align-items: center;
   padding-bottom: 3rem;
@@ -122,17 +131,37 @@ position: relative;
   width: 30%;
   height: 100%;
   border-radius: 8% 8% 8% 0%;
+ 
 }
 
 /* Re-usable classes */
 
-.m0 {
-  margin: 0;
-}
+.m0 {margin: 0;}
+.flex {display: flex;}
+.justify-center {justify-content: center;}
 
 
 /* animations */
-/* @keyframes slideInFromLeft {
+
+.icon-links :hover {
+  animation: icon-links 0.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes icon-links {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -157,10 +186,7 @@ position: relative;
 .navbar {
   animation-name: slideInFromRight;
   animation-duration: 2s;
-} */
-
-/* on hover move icon links smooth animation with keyframes*/
-
+}
 
 
 
@@ -201,6 +227,6 @@ position: relative;
     width: 2rem;
     border: none;
     right: 3rem;
-    color: #fff;
+    color: var(--white-color);
   }
 }
