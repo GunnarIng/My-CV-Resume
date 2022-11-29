@@ -53,6 +53,7 @@ img {
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
 }
+
 .navbar a > span {
   font-weight: 700;
   margin-inline-end: 0.5em;
@@ -70,6 +71,7 @@ img {
   font-family: "Ropa Sans", sans-serif;
   font-size: 2.5rem;
 }
+
 .front-name a {
   text-decoration: none;
   color: #fff;
@@ -87,9 +89,6 @@ position: relative;
   filter: grayscale(100%);  
 }
 
-
-
-
 .page-main {
   font-family: "Roboto";
   font-size: 12px;
@@ -104,6 +103,7 @@ position: relative;
   gap: 2rem;
   align-items: center;
   padding-bottom: 3rem;
+
 }
 .side-img {
   width: 30%;
