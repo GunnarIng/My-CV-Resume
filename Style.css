@@ -9,9 +9,12 @@
 
 :root {
   --white-color: #ffffff;
-  --blue-color:#0E4BEF;
-  --header-height:5rem;
-  --footer-height:4rem;
+}
+
+#top-navigation {
+display: hidden;
+ top: 0;
+
 }
 
 body {
@@ -57,8 +60,7 @@ img {
 .navbar a {
   text-decoration: none;
   color: var(--white-color);
-  font-size:  1.6rem;
-  
+  font-size: 1.6rem;
 }
 
 .navbar a > span {
@@ -71,8 +73,7 @@ img {
 }
 
 article {
- width: 40%;
-
+  width: 40%;
 }
 
 .front-name {
@@ -90,7 +91,7 @@ article {
   width: 10rem;
 }
 
-.profile-pic{
+.profile-pic {
   position: relative;
   width: 160px;
   height: 160px;
@@ -98,18 +99,17 @@ article {
   border-radius: 500rem;
   top: 4rem;
   margin-left: 2rem;
-  filter: grayscale(100%);  
+  filter: grayscale(25%);
 }
 
-.icon-links { 
+.icon-links {
   margin-top: 1rem;
-  
 }
+
 .fa-brands {
-  color: var(--white-color);  
+  color: var(--white-color);
   font-size: 4rem;
   margin-right: 1rem;
-  
 }
 
 .page-main {
@@ -117,34 +117,98 @@ article {
   font-size: 1rem;
   color: rgb(0, 0, 0);
   padding: 0rem 4rem 0 4rem;
-  height: 100vh;
+  height: 130vh;
   justify-items: center;
 }
 
-.page-first, .page-second {
+.page-first,
+.page-second {
   gap: 2rem;
   align-items: center;
   padding-bottom: 3rem;
-
 }
 .side-img {
   width: 30%;
   height: 100%;
   border-radius: 8% 8% 8% 0%;
- 
 }
 
+/* Portfolio Cards */
+
+section {
+  margin: 0 auto;
+  padding: 0rem 4rem 0 4rem;
+}
+
+#card-container {
+  padding: 1rem 4rem 0 4rem;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 0rem 4rem 0 4rem;
+  justify-items: center;
+  background-color: var(--white-color);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+#project-previews {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #000000;
+  padding: 0.5rem;
+}
+
+/* Footer */
+
+.page-footer {
+  position: absolute;
+  background-color: #656565;
+  color: var(--white-color);
+width: 100%;
+  margin-top: 3rem;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem 0 4rem;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+
+
+
+
 /* Re-usable classes */
+.decoration {
+  color: #b90000;
+  font-weight: 600;
+}
+.m0 {
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
 
-.m0 {margin: 0;}
-.flex {display: flex;}
-.justify-center {justify-content: center;}
 
-
-/* animations */
-
-.icon-links :hover {
-  animation: icon-links 0.5s ease-in-out;
+ .icon-links :hover { 
+  animation: icon-links 1s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -186,47 +250,10 @@ article {
 .navbar {
   animation-name: slideInFromRight;
   animation-duration: 2s;
-}
-
-
-
+} 
 
 /*  max 360 mobile  inc tablet  right order with mediaquerys */
 
 /* TABLET */
-@media (max-width: 768px) {
-}
-
-/* MOBILE */
-@media (max-width: 406px) {
-  .navbar {
-    position: fixed;
-    z-index: 50;
-    inset: 0 0 0 30%;
-    background: hsla(0, 0%, 0%, 0.5);
-    backdrop-filter: blur(20px);
-    padding: 16vh 0 0 20px;
-    gap: 2em;
-    height: 100%;
-    border-radius: 0px 0 0 17px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-out;
-  }
-  .navbar.open {
-    transform: translateX(0);
-  }
-
-  ul {
-    flex-direction: column;
-  }
-  .mobile-menu-toggle {
-    display: block;
-    position: absolute;
-    z-index: 60;
-    background-color: transparent;
-    width: 2rem;
-    border: none;
-    right: 3rem;
-    color: var(--white-color);
-  }
-}
+/* @media (max-width: 768px) { */
+/* } */

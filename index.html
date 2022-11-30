@@ -9,12 +9,14 @@
     <title>Thomas Ingvarsson Cv</title>
 
     <link rel="stylesheet" href="Style.css" />
-    <link rel="stylesheet" href="desktop.css" />
+    <!-- <link rel="stylesheet" href="desktop.css" /> -->
         <!-- <link rel="stylesheet" href="tablet.css" /> -->
         <link rel="stylesheet" href="mobile.css" />
   </head>
   <body>
+    <div id="top-navigation" ></div>
     <header class="header flex">
+      
       <div class="front-name flex">
         <h2>
           <u>Thomas Ingvarsson</u>
@@ -43,23 +45,23 @@
         <nav>
           <ul class="menu-list flex">
             <li class="active">
-              <a href="index.html">
+              <a href="#top-navigation">
                 <span aria-hidden="true">00</span>
                 Home
               </a>
             </li>
 
             <li>
-              <a href="portfolio.html">
+              <a href="#whoAmI">
                 <span aria-hidden="true">01</span>
-                Portfolio
+                About me
               </a>
             </li>
 
             <li>
-              <a href="skills.html">
+              <a href="#portfolio-navigation">
                 <span aria-hidden="true">02</span>
-                Skills
+                Portfolio
               </a>
             </li>
           </ul>
@@ -69,7 +71,7 @@
 
     <main class="page-main">
       <div class="page-first flex justify-center">
-        <article>
+        <article id="whoAmI">
           <h2>Who am I?</h2>
           <p>
             I´m a down to earth person who like to have structure and order in the daily life, if
@@ -101,7 +103,119 @@
           </p>
         </article>
       </div>
-      <section></section>
+
+      <section id="portfolio-navigation" "><h1 class="portfolio-text">Portfolio</h1></section>
+
+      <!-- Card 1 -->
+      <div id="card-container" class="justify-center">
+  
+        <div class="card">
+          <img id="project-previews" src="./assets/img/Skärmbild_20221129_135030.png" alt="Lago di Braies">
+    
+        
+            <div class="card__details">
+    
+          
+              <h3 class="tag">The Landlord Game</h3>
+    
+          
+               <div class="name">Text based game made with JavaScript and some Html & Css <br>
+                                 Created: 2021-11-21
+            </div>
+    
+            <p>The task with this project was to build a textbased interactive game with use of JavaScript. There are diffrent outcomings depending on what choices you do in the game.</p>
+    
+            <a class="decoration" href="https://gunnaring.github.io/The-landlord/">Link to the game</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card 2 -->
+        <div id="card-container" class="justify-center">
+  
+          <div class="card">
+            <img id="project-previews" src="./assets/img/Skärmbild_20221129_135256.png" alt="Lago di Braies">
+      
+          
+              <div class="card__details">
+      
+            
+                <h3 class="tag">Copy of Apple.com frontpage</h3>
+      
+            
+                 <div class="name">Made the startpage of apple.com from sratch with my classmate Simon Bengtsson. Html & Css used. <br>
+                                   Created: 2021-10-15
+              </div>
+      
+              <p>Not all links are functional and the search function is not active. And the content of images has been reduced in this project.</p>
+      
+              <a class="decoration" href="https://gunnaring.github.io/Apple-frontpage-copy/">Link to the project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div id="card-container" class="justify-center">
+  
+          <div class="card">
+            <img id="project-previews" src="./assets/img/smallChurchproject.png" alt="Lago di Braies">
+      
+          
+              <div class="card__details">
+      
+            
+                <h3 class="tag">Re-make of SmallChurchMusic</h3>
+      
+            
+                 <div class="name">Project was to take an old webpage and modernise it with my classmate Simon Bengtsson. Used Html & Css <br>
+                                   Created: 2021-10-05
+              </div>
+      
+              <p>The orginal homepage had alot of elements that we tried to keep due to regular visitors.  Not all links are functional and the search function is not active. </p>
+      
+              <a class="decoration" href="https://gunnaring.github.io/Inl-mning-2-Old-website/">Link to the project</a>
+            </div>
+          </div>
+        </div>
+
     </main>
+
+<!-- create a mailTo form -->
+<h2>Give Feedback to Our Website.</h2>
+<form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+  <div>
+    <label for="name">Name:
+      <input type="text" name="name" id="name" />
+    </label>
+  </div>
+  <div>
+    <label for="email">Email:
+      <input type="text" name="email" id="email" />
+    </label>
+  </div>
+  <div>
+    <label>Comments:</label>
+    <br />
+    <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+  </div>
+  <div>
+    <input type="submit" name="submit" value="Send" />
+    <input type="reset" name="reset" value="Clear Form" />
+  </div>
+</form>
+
+    <!-- simpple footer with mail contact -->
+    <footer class="page-footer">
+      <div class="footer-container">
+        <div class="footer-text">
+          <h2>Contact</h2>
+          <p>
+            If you have any questions or want to get in touch with me, please send me an email.
+          </p>
+         <!-- mailto -->
+         <a href="mailto:thomas.ingvarsson@medieinstitutet.se?subject=Mail from our Website">Contact Me</a>
+
+     
   </body>
 </html>
