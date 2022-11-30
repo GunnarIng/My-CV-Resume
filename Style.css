@@ -113,10 +113,11 @@ article {
   animation-iteration-count: infinite;
 }
 
-.fa-brands {
+.icon {
   color: var(--white-color);
   font-size: 4rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .page-main {
