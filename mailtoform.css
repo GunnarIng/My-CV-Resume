@@ -1,0 +1,30 @@
+/* mailform in the middle */
+.mailForm {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    margin-top: 4rem;
+    background: rgb(111, 111, 111);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+
+}
+    
+.labels {
+    
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#contactText {
+    margin-top: .5rem;
+ color: var(--white-color);
+ font-size: 2rem;
+ z-index: 33333;
+}

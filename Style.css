@@ -9,6 +9,7 @@
 
 :root {
   --white-color: #ffffff;
+  --black-color: #000000;
 }
 
 #top-navigation {
@@ -23,6 +24,7 @@ body {
   overflow-x: hidden;
   background-color: #ffffff;
   color: var(--white-color);
+  
 }
 
 .header {
@@ -117,7 +119,6 @@ article {
   font-size: 1rem;
   color: rgb(0, 0, 0);
   padding: 0rem 4rem 0 4rem;
-  height: 130vh;
   justify-items: center;
 }
 
@@ -132,6 +133,8 @@ article {
   height: 100%;
   border-radius: 8% 8% 8% 0%;
 }
+
+
 
 /* Portfolio Cards */
 
@@ -169,6 +172,7 @@ section {
 
 .page-footer {
   position: absolute;
+  bottom: 0;
   background-color: #656565;
   color: var(--white-color);
 width: 100%;

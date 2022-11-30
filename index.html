@@ -9,6 +9,7 @@
     <title>Thomas Ingvarsson Cv</title>
 
     <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="mailtoform.css">
     <!-- <link rel="stylesheet" href="desktop.css" /> -->
         <!-- <link rel="stylesheet" href="tablet.css" /> -->
         <link rel="stylesheet" href="mobile.css" />
@@ -181,23 +182,28 @@
 
     </main>
 
-<!-- create a mailTo form -->
-<h2>Give Feedback to Our Website.</h2>
-<form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
-  <div>
-    <label for="name">Name:
+
+
+<!-- mailTo form -->
+
+
+<form  class="mailForm" action="mailto:thomas.ingvarsson@medieinstitutet.se" method="get" enctype="text/plain">
+  <div  ><h2 id="contactText">Contact me</h2>
+    <label class="labels" for="name">Name:
       <input type="text" name="name" id="name" />
     </label>
   </div>
+
   <div>
-    <label for="email">Email:
+    <label class="labels" for="email">Email:
       <input type="text" name="email" id="email" />
     </label>
   </div>
+
   <div>
     <label>Comments:</label>
     <br />
-    <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+    <textarea name="comments" rows="12" cols="35">Send your questions to me.</textarea>
   </div>
   <div>
     <input type="submit" name="submit" value="Send" />
@@ -205,7 +211,9 @@
   </div>
 </form>
 
-    <!-- simpple footer with mail contact -->
+
+
+    <!-- Footer-->
     <footer class="page-footer">
       <div class="footer-container">
         <div class="footer-text">
@@ -213,8 +221,8 @@
           <p>
             If you have any questions or want to get in touch with me, please send me an email.
           </p>
-         <!-- mailto -->
-         <a href="mailto:thomas.ingvarsson@medieinstitutet.se?subject=Mail from our Website">Contact Me</a>
+        </footer>
+         
 
      
   </body>
