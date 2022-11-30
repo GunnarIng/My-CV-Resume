@@ -51,14 +51,6 @@ img {
   padding-right: 1.5em;
 }
 
-.menu-list {
-  list-style: none;
-  justify-content: flex-end;
-  gap: 1.2rem;
-  padding: 0;
-  margin: 0;
-}
-
 .navbar a {
   text-decoration: none;
   color: var(--white-color);
@@ -69,6 +61,14 @@ img {
   font-weight: 700;
   margin-inline-end: 0.5em;
 }
+.menu-list {
+  list-style: none;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
 
 .mobile-menu-toggle {
   display: none;
@@ -106,6 +106,11 @@ article {
 
 .icon-links {
   margin-top: 1rem;
+}
+
+.icon-links :hover { 
+  animation: icon-links 1s ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .fa-brands {
@@ -152,37 +157,36 @@ section {
   padding: 0rem 4rem 0 4rem;
   justify-items: center;
   background-color: var(--white-color);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); */
 }
 
 #project-previews {
   width: 250px;
   height: 200px;
   object-fit: cover;
-  margin-right: 0.5rem;
+  margin-right: 2rem;
+  border-radius: 8px;
 }
 
 .card {
   display: flex;
-  border: 1px solid #000000;
+
   padding: 0.5rem;
+
 }
 
 /* Footer */
 
 .page-footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   background-color: #656565;
   color: var(--white-color);
-width: 100%;
-  margin-top: 3rem;
+  width: 100%;
 }
+
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 4rem 0 4rem;
+  padding: 0rem 0rem 0 4rem;
 }
 
 .footer-text {
@@ -190,8 +194,6 @@ width: 100%;
   font-family: "Roboto";
   font-weight: 400;
 }
-
-
 
 
 
@@ -211,10 +213,7 @@ width: 100%;
 }
 
 
- .icon-links :hover { 
-  animation: icon-links 1s ease-in-out;
-  animation-iteration-count: infinite;
-}
+
 
 @keyframes icon-links {
   0% {
