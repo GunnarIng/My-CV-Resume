@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
 
 *,
 *::before,
@@ -22,17 +23,18 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #ffffff;
-  color: var(--white-color);
-  
+  background-color: #d0dbdd;
+  color: var(--white-color); 
 }
 
+
+/* Header and Navbar with content */
 .header {
   height: 70vh;
   padding-top: 3rem;
   padding-bottom: 4rem;
   justify-content: flex-end;
-  background-image: url("./assets/img/background1.png");
+  background-image: url("./assets/img/backgroundcity.png");
   margin-bottom: 3rem;
 }
 
@@ -55,27 +57,12 @@ img {
   text-decoration: none;
   color: var(--white-color);
   font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar a > span {
   font-weight: 700;
   margin-inline-end: 0.5em;
-}
-.menu-list {
-  list-style: none;
-  justify-content: flex-end;
-  gap: 1.2rem;
-  padding: 0;
-  margin: 0;
-}
-
-
-.mobile-menu-toggle {
-  display: none;
-}
-
-article {
-  width: 40%;
 }
 
 .front-name {
@@ -121,12 +108,32 @@ article {
 }
 
 .myCvText {
+  align-content: flex-start;
  font-size: 1rem;
+ 
+}
+.menu-list {
+  list-style: none;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
 }
 
 
+.mobile-menu-toggle {
+  display: none;
+}
+
+
+
+/* Main content with articles */
+article {
+  width: 40%;
+}
+
 .page-main {
-  font-family: "Roboto";
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   color: rgb(0, 0, 0);
   padding: 0rem 4rem 0 4rem;
@@ -162,7 +169,7 @@ section {
 .card {
   padding: 0rem 4rem 0 4rem;
   justify-items: center;
-  background-color: var(--white-color);
+  background-color: #d0dbdd;
   /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); */
 }
 
@@ -186,6 +193,7 @@ section {
 .page-footer {
   position: relative;
   bottom: 0;
+  margin-top: 6rem;
   background-color: #656565;
   color: var(--white-color);
   width: 100%;
@@ -197,11 +205,9 @@ section {
 
 .footer-text {
   font-size: 1.2rem;
-  font-family: "Roboto";
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
-
-
 
 /* Re-usable classes */
 .decoration {
@@ -219,8 +225,7 @@ section {
 }
 
 
-
-
+/* Animations */
 @keyframes icon-links {
   0% {
     transform: scale(1);
@@ -232,7 +237,6 @@ section {
     transform: scale(1);
   }
 }
-
 
 @keyframes slideInFromLeft {
   0% {
@@ -247,7 +251,6 @@ section {
   animation-duration: 2s;
 }
 
-
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
@@ -255,10 +258,34 @@ section {
   100% {
     transform: translateX(0);
   }
+  
 }
 .navbar {
   animation-name: slideInFromRight;
   animation-duration: 2s;
 } 
+
+.navbar a {
+  box-shadow: inset 0 0 0 0 #17d69a;
+  color: #ffffff;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .7s ease-in-out, box-shadow .7s ease-in-out;
+}
+
+.navbar a:hover {
+  box-shadow: inset 190px 0 0 0 #7a02e3;
+  color: white;
+}
+
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card:not(hover) {
+  transform: scale(1);
+  transition: 0.5s;
+}
 
 
