@@ -1,0 +1,129 @@
+@media (max-width: 768px) {
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: auto;
+  }
+  
+  .front-name {
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 4rem 0 0 0;
+  }
+  
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic, img {
+  top: 1.3rem;
+  margin: 0;
+  }
+  
+  .page-main {
+    padding: 0rem .5rem 0 .5rem;
+    width: 100%;
+  }
+  
+  /* Info about me */
+  .page-first, .page-second {
+  flex-direction: column;
+  }
+  
+  .page-second > img{
+    order:5 ;
+    margin-bottom: 2rem;
+  }
+  
+  article {
+    width: 90%;
+  }
+  
+  .side-img {
+    width: 90%;
+  }
+  
+  /* Navbar Function */
+  .navbar {
+    position: fixed;
+    z-index: 50;
+    inset: 0 0 0 30%;
+    background: hsla(0, 0%, 0%, 0.5);
+    backdrop-filter: blur(20px);
+    padding: 16vh 0 0 20px;
+    gap: 2em;
+    height: 100%;
+    border-radius: 0px 0 0 17px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    animation: none;
+  }
+  .navbar.open {
+    transform: translateX(0);
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  
+  .mobile-menu-toggle {
+    display: block;
+    position: fixed;
+    z-index: 60;
+    background-color: transparent;
+    width: 2rem;
+    border: none;
+    right: 3rem;
+    color: var(--white-color);
+  }
+  
+  /* Portfolio Section */
+  section {
+    padding: 0;
+  }
+  
+  .card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+   
+  }
+  #card-container {
+    padding: 0;
+  }
+  
+  /* MailForm */
+  .mailheight {
+    height: 60vh;
+  }
+  
+  .mailForm {
+    margin: 0;
+   
+  }
+  
+  /* Footer */
+  .footer-container {
+  padding: 0 0 0 1rem;
+  
+  }
+  
+
+}

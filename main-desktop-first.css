@@ -120,6 +120,12 @@ article {
   margin-bottom: 1rem;
 }
 
+/* make and arrrow pointing up */
+.myCvArrow {
+ font-size: 1rem;
+}
+
+
 .page-main {
   font-family: "Roboto";
   font-size: 1rem;
@@ -256,8 +262,4 @@ section {
   animation-duration: 2s;
 } 
 
-/*  max 360 mobile  inc tablet  right order with mediaquerys */
 
-/* TABLET */
-/* @media (max-width: 768px) { */
-/* } */

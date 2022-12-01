@@ -5,8 +5,8 @@ In this project I shall introduce myself and show my earlier projects in a portf
 
 
 toDo>
-fix mobile query
-seperate files
 
-add: https://drive.google.com/file/d/1BREVV19MLAcSUYEU2LzW30YdLRnSq9SB/view?usp=sharing
+seperate files???
+
+
 

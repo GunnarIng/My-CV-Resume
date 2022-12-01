@@ -20,7 +20,7 @@ function toggleMenu () {
   menuIcon.classList.toggle("fa-bars");
 }
 
-
+// Possible to get the icon fa-brands bars to change color to black when scrolling down?
 
 
 
