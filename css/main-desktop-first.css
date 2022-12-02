@@ -6,6 +6,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -34,7 +35,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 4rem;
   justify-content: flex-end;
-  background-image: url("./assets/img/backgroundcity.png");
+  background-image: url("../assets/img/backgroundcity.png");
   margin-bottom: 3rem;
 }
 
