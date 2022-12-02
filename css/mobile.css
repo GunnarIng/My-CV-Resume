@@ -1,6 +1,4 @@
 @media (max-width: 406px) {
-
-
   /* Header */
   .header {
     height: auto;
@@ -14,9 +12,8 @@
     padding: 4rem 0 0 0;
   }
 
-  .icon-links :hover { 
+  .icon-links :hover {
     animation: none;
-    
   }
 
   .profile-pic,
@@ -50,12 +47,13 @@
   }
 
   /* Navbar Function */
-  
+
   .navbar {
     position: fixed;
     z-index: 50;
     inset: 0 0 0 30%;
     background: hsla(0, 0%, 0%, 0.5);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     padding: 16vh 0 0 20px;
     gap: 2em;
@@ -86,7 +84,7 @@
     right: 3rem;
     color: var(--white-color);
   }
-/* toggles by addIntersectionObserver function i main.js */
+  /* toggles by addIntersectionObserver function i main.js */
   .black {
     color: black;
   }
@@ -95,13 +93,12 @@
   section {
     padding: 0;
   }
-  .portfolio-text{
+  .portfolio-text {
     padding: 0 0 0 1rem;
     margin: 0;
   }
 
   .card {
-    
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -114,9 +111,9 @@
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   }
 
-#project-previews {
-  margin: 0;
-}
+  #project-previews {
+    margin: 0;
+  }
 
   #card-container {
     display: flex;
@@ -132,11 +129,8 @@
     display: flex;
   }
 
-  .footer-container  .myCvText {
+  .footer-container .myCvText {
     margin: 0;
     padding: 0;
   }
-
 }
-
-
