@@ -97,7 +97,7 @@ img {
 }
 
 .icon-links :hover {
-  animation: icon-links 1s ;
+  animation: icon-links 1s;
   animation-iteration-count: infinite;
 }
 
@@ -165,7 +165,19 @@ section {
   padding: 0rem 4rem 0 4rem;
   justify-items: center;
   background-color: #d0dbdd;
-  /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-subheading {
+  padding-top: 15px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 #project-previews {
@@ -173,12 +185,12 @@ section {
   height: 200px;
   object-fit: cover;
   margin-right: 2rem;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .card {
+  border-radius: 4px;
   display: flex;
-
   padding: 0.5rem;
 }
 
@@ -270,11 +282,11 @@ section {
   color: white;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
 .card:not(hover) {
   transform: scale(1);
   transition: 0.5s;
-}
+} */

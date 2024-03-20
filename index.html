@@ -11,20 +11,16 @@
         gtag('js', new Date());
         gtag('config', 'G-NT81SPG9VS');
 </script>
-
-    <title>Thomas Ingvarsson Cv</title>
+    <title>Thomas Ingvarsson - Frontend Devoloper</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/logoT.ico">
-    
     <link rel="stylesheet" href="./css/main-desktop-first.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <script src="./js/main.js"></script>
-
   </head>
   <body>
     <div id="top-navigation" ></div>
     <header class="header flex">
-      
       <div class="front-name flex">
         <h2>
           <u>Thomas Ingvarsson</u>
@@ -36,10 +32,7 @@
         </h2>
         <h5 class="m0">Front End Dev Student</h5>
         <a href="https://medieinstitutet.se/">@Medieinstitutet</a>
-
-
         <!-- Links in header -->
-
         <div class="icon-links" id="icon-links">
           <a href="https://www.linkedin.com/in/thomas-ingvarsson-747217251/"><i class="fa-brands fa-linkedin icon"></i></a>
           <a href="mailto:thomas.ingvarsson@medieinstitutet.se"><i class="fa-solid fa-envelope icon"></i></a>
@@ -48,11 +41,9 @@
           <div class="myCvText" >-Resume in the pdf-</div>
         </div>
       </div>
-
       <button id="menu-button" class="mobile-menu-toggle">
         <i class="fa-solid fa-bars fa-3x"></i>
       </button>
-
       <aside id="navbar" class="navbar">
         <nav>
           <ul class="menu-list flex">
@@ -62,14 +53,12 @@
                 Home
               </a>
             </li>
-
             <li>
               <a href="#whoAmI">
                 <span aria-hidden="true">01</span>
                 About me
               </a>
             </li>
-
             <li>
               <a href="#portfolio-navigation">
                 <span aria-hidden="true">02</span>
@@ -80,8 +69,6 @@
         </nav>
       </aside>
     </header>
-
-
       <!-- Main content -->
     <main class="page-main">
       <div class="page-first flex justify-center">
@@ -119,13 +106,31 @@
       </div>
 <!-- Portfolio Section -->
       <section id="portfolio-navigation" "><h1 class="portfolio-text">Portfolio</h1></section>
+      <div id="card-container" class="justify-center">
+        <div class="card">
+          <img id="project-previews" src="./assets/img/GlobalForm.png" alt="GlobalForm-Solutions">
+            <div class="card__details">
+              <div class="title-container">
+                 <h3 class="m0">Global Form Solutions</h3>
+                  <a class="decoration" href="https://global-form-solutions.vercel.app/">Link to the project</a>
+              </div>
+               <div class="title-subheading">Form service - NextJs & T3  <br>
+                                 Created: 2023-12-04
+            </div>
+            <p>GlobalForm-Solutions is a collaborative project undertaken by three classmates as 
+              part of our final thesis. The project focuses on building a web application that 
+              allows users to create forms and share them with friends or events. We have utilized 
+              the Next.js framework with the T3 stack to set up the project. </p>
+          </div>
+        </div>
+      </div>
 
       <div id="card-container" class="justify-center">
        <div class="card">
-         <img id="project-previews" src="./assets/img/getnshat.png" alt="Lago di Braies">
+         <img id="project-previews" src="./assets/img/getnshat.png" alt="Gents Hats">
            <div class="card__details">
-             <h3 class="tag">Gents Hat - Webshop</h3>
-              <div class="name">webshop using React TS.  <br>
+             <h3 class="m0">Gents Hat - Webshop</h3>
+              <div class="title-subheading">webshop using React TS.  <br>
                                 Created: 2023-04-2
            </div>
            <p>It has a fully functional cart and checkout function. 
@@ -135,41 +140,29 @@
          </div>
        </div>
      </div>
-     
       <div id="card-container" class="justify-center">
-  
         <div class="card">
           <img id="project-previews" src="./assets/img/quizgame.png" alt="Lago di Braies">
-    
-        
             <div class="card__details">
-    
-          
-              <h3 class="tag">The Quizie-quiz game</h3>
-    
-          
-               <div class="name">A quiz game built with React TS and JSS using an API for the whole game. <br>
+              <h3 class="m0">The Quizie-quiz game</h3>
+               <div class="title-subheading">A quiz game built with React TS and JSS using an API for the whole game. <br>
                                  Created: 2023-03-01
             </div>
-    
             <p>It uses a API to fetch the random questions and answers. 
               The game takes your answers and compare them to the correct ones and displays numbers of right answers in the end of the round. .</p>
-    
             <a class="decoration" href="https://quiziequiz.netlify.app/">Link to the game</a>
           </div>
         </div>
       </div>
     </div> 
-
-
      <!-- Card 1 -->
          <!-- Card 2 -->
          <div id="card-container" class="justify-center">
           <div class="card">
             <img id="project-previews" src="./assets/img/moonMission.png" alt="Lago di Braies">
               <div class="card__details">
-                <h3 class="tag">Moon Mission a p5,js game</h3>
-                 <div class="name">Based a game on p5.Js. Action space shooter game<br>
+                <h3 class="m0">Moon Mission a p5,js game</h3>
+                 <div class="title-subheading">Based a game on p5.Js. Action space shooter game<br>
                                    Created: 2022-12-21
               </div>
               <p>Here we should base the game on using p5.js. It was a challenge but it came togehter pretty good.</p>
@@ -178,14 +171,13 @@
           </div>
         </div>
       </div>
-
       <!-- Card 3 -->
       <div id="card-container" class="justify-center">
         <div class="card">
           <img id="project-previews" src="./assets/img/Skärmbild_20221129_135030.png" alt="Lago di Braies">
             <div class="card__details">
-              <h3 class="tag">The Landlord Game</h3>
-               <div class="name">Text based game made with JavaScript and some Html & Css <br>
+              <h3 class="m0">The Landlord Game</h3>
+               <div class="title-subheading">Text based game made with JavaScript and some Html & Css <br>
                                  Created: 2022-11-21
             </div>
             <p>The task with this project was to build a textbased interactive game with use of JavaScript. There are diffrent outcomings depending on what choices you do in the game.</p>
@@ -194,16 +186,14 @@
         </div>
       </div>
     </div>
-     
     </div> 
-    
     <!-- Card 4 -->
         <div id="card-container" class="justify-center">
           <div class="card">
             <img id="project-previews" src="./assets/img/Skärmbild_20221129_135256.png" alt="Lago di Braies">
               <div class="card__details">
-                <h3 class="tag">Copy of Apple.com frontpage</h3>
-                 <div class="name">Made the startpage of apple.com from sratch with my classmate Simon Bengtsson. Html & Css used. <br>
+                <h3 class="m0">Copy of Apple.com frontpage</h3>
+                 <div class="title-subheading">Made the startpage of apple.com from sratch with my classmate Simon Bengtsson. Html & Css used. <br>
                                    Created: 2022-10-15
               </div>
               <p>Not all links are functional and the search function is not active. And the content of images has been reduced in this project.</p>
@@ -211,14 +201,13 @@
             </div>
           </div>
         </div>
-
         <!-- Card 5 -->
         <div id="card-container" class="justify-center">
           <div class="card">
             <img id="project-previews" src="./assets/img/smallChurchproject.png" alt="Lago di Braies">
               <div class="card__details">
-                <h3 class="tag">Re-make of SmallChurchMusic</h3>
-                 <div class="name">Project was to take an old webpage and modernise it with my classmate Simon Bengtsson. Used Html & Css <br>
+                <h3 class="m0">Re-make of SmallChurchMusic</h3>
+                 <div class="title-subheading">Project was to take an old webpage and modernise it with my classmate Simon Bengtsson. Used Html & Css <br>
                                    Created: 2022-10-05
               </div>
               <p>The orginal homepage had alot of elements that we tried to keep due to regular visitors.  Not all links are functional and the search function is not active. </p>
@@ -226,15 +215,11 @@
             </div>
           </div>
         </div>
-
 </main>
-
-
    <!-- Footer-->
     <footer class="page-footer">
       <div class="footer-container">
         <div class="footer-text">
-          
           <h2 class="m0">Contact</h2>
           <div class="myCvText " >::Resume in the pdf</div>
           <a class="icon-links" href="https://www.linkedin.com/in/thomas-ingvarsson-747217251/"><i class="fa-brands fa-linkedin icon"></i></a>
@@ -244,8 +229,5 @@
         </div>
       </div>
      </footer>
-     
-
-     
   </body>
 </html>
